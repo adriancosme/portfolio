@@ -6,7 +6,7 @@ type HeaderPropsType = {
 };
 
 export const HeaderComponent = ({pages}: HeaderPropsType): JSX.Element => {
-    return <header className="flex justify-center">
+    return <header className="flex justify-center pt-4 bg-[#20222C]">
         <nav className="flex gap-2">
             {
                 pages.map(page => {
