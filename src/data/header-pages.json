@@ -1,22 +1,22 @@
 [
     {
         "name": "Home",
-        "to": "home"        
+        "to": "/"
     },
     {
         "name": "Projects",
-        "to": "projects"
+        "to": "#projects"
     },
     {
         "name": "About me",
-        "to": "about-me"
+        "to": "#about-me"
     },
     {
         "name": "Experience",
-        "to": "experience"
+        "to": "#experience"
     },
     {
         "name": "Contact",
-        "to": "contact"
+        "to": "#contact"
     }
 ]
