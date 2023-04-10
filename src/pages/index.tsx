@@ -32,7 +32,10 @@ export default function Home() {
                 >
                   Download CV
                 </Link>
-                <Link href={"#contact"} className="text-white text-2xl border border-[#1C68B0] rounded-lg p-2.5  hover:scale-105">
+                <Link
+                  href={"#contact"}
+                  className="text-white text-2xl border border-[#1C68B0] rounded-lg p-2.5  hover:scale-105"
+                >
                   Contact me 👋
                 </Link>
               </div>
@@ -51,7 +54,61 @@ export default function Home() {
           </div>
         </section>
         <SectionComponent id="projects" title="Projects">
-          <article></article>
+          <div className="grid grid-cols-12 gap-5 mt-8">
+            <article className="group col-span-12 lg:col-span-4 border rounded-3xl shadow-md border-gray-700 relative bg-[#CECECE] cursor:pointer">
+              <header>
+                <div className="block">
+                  <section className="overflow-hidden rounded-t-3xl relative bg-white">
+                    <Image
+                      src="/university-demo.webp"
+                      alt="university-demo-app"
+                      width={400}
+                      height={600}
+                    />
+                  </section>
+                </div>
+                <h3 className="text-[#20222C] px-4 text-lg font-bold ">
+                  Card title
+                </h3>
+              </header>
+              <section className="mt-2">
+                <p className="text-[#20222C] px-4 text-md ">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit, lacus
+                  tempus laoreet pellentesque ridiculus nam, etiam id gravida
+                  hac mi nisl. Lectus scelerisque platea primis auctor consequat
+                  a arcu, nisl dictum maecenas duis nulla
+                </p>
+              </section>
+              <footer className="p-4">
+                <div className="flex flex-wrap gap-1">
+                  {[1, 2, 3, 4].map((val) => {
+                    return (
+                      <div
+                        key={val}
+                        className="bg-[#20222C] px-6 py-1 text-white rounded-3xl"
+                      >
+                        React
+                      </div>
+                    );
+                  })}
+                </div>
+                <div className="flex gap-2 mt-4">
+                  <Link
+                    href={"/"}
+                    className="px-6 py-1 bg-[#1C68B0] rounded-3xl text-white"
+                  >
+                    Code
+                  </Link>
+                  <Link
+                    href={"/"}
+                    className="px-6 py-1 bg-[#1C68B0] rounded-3xl text-white"
+                  >
+                    Demo
+                  </Link>
+                </div>
+              </footer>
+            </article>
+          </div>
         </SectionComponent>
         <SectionComponent id="about-me" title="About me">
           <p>About me text</p>
