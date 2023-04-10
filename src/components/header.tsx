@@ -23,7 +23,7 @@ export const HeaderComponent = ({ pages }: HeaderPropsType): JSX.Element => {
             {pages.map((page) => {
               return (
                 <Link
-                  className="text-[#CECECE] hover:text-[#4B0ABA] hover:underline"
+                  className="text-[#CECECE] hover:text-[#1C68B0] hover:underline"
                   key={page.name}
                   href={`${page.to}`}
                 >
