@@ -173,7 +173,7 @@ export default function Home() {
                   target="_blank"
                   className="group flex items-center justify-center w-11 h-11 bg-white hover:bg-[#1C68B0] rounded-full -left-3 cursor-pointer"
                 >
-                  <AiFillGithub className="group-hover:text-white group-hover:scale-110" />
+                  <AiFillGithub className="text-black group-hover:text-white group-hover:scale-110" />
                 </Link>
                 <Link
                   href="https://www.linkedin.com/in/edwin-cosme/"
@@ -181,7 +181,7 @@ export default function Home() {
                   target="_blank"
                   className="group flex items-center justify-center w-11 h-11 bg-white hover:bg-[#1C68B0] rounded-full -left-3 cursor-pointer"
                 >
-                  <FaLinkedinIn className="group-hover:text-white" />
+                  <FaLinkedinIn className="text-black group-hover:text-white" />
                 </Link>
                 <Link
                   href="https://wa.me/19841536959"
@@ -189,7 +189,7 @@ export default function Home() {
                   target="_blank"
                   className="group flex items-center justify-center w-11 h-11 bg-white hover:bg-[#1C68B0] rounded-full -left-3 cursor-pointer"
                 >
-                  <AiOutlineWhatsApp className="group-hover:text-white" />
+                  <AiOutlineWhatsApp className="text-black group-hover:text-white" />
                 </Link>
                 <Link
                   href="mailto:adriancosme15@gmail.com"
@@ -197,7 +197,7 @@ export default function Home() {
                   target="_blank"
                   className="group flex items-center justify-center w-11 h-11 bg-white hover:bg-[#1C68B0] rounded-full -left-3 cursor-pointer"
                 >
-                  <AiOutlineMail className="group-hover:text-white" />
+                  <AiOutlineMail className="text-black group-hover:text-white" />
                 </Link>
               </section>
             </section>
