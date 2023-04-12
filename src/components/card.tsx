@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Chip from "./chip";
+import { Button } from "./button";
 
 interface CardProps {
   image: string;
@@ -45,19 +46,9 @@ const Card = ({
           })}
         </div>
         <div className="flex gap-2 mt-4">
-          <Link
-            href={repository ?? '/'}
-            className="px-6 py-1 bg-[#1C68B0] rounded-3xl text-white"
-          >
-            Code
-          </Link>
+          <Button color="primary" href="/" text="Code" size="base" />
           {hasLiveDemo && (
-            <Link
-              href={liveDemoUrl ?? '/s'}
-              className="px-6 py-1 bg-[#1C68B0] rounded-3xl text-white"
-            >
-              Live demo
-            </Link>
+            <Button color="primary" href="/" text="Live Demo" size="base" />
           )}
         </div>
       </footer>
