@@ -1,0 +1,27 @@
+[
+    {
+        "position": "Full-stack developer",
+        "period": "November 2021 - January 2023",
+        "company": "31Rooms",
+        "websiteCompany": "https://31rooms.com/",
+        "shortDescription": "Create new features and fix bugs for multiple client applications",
+        "archivements": [
+            "Achieved a 90% reduction in response times for e-commerce operations by implementing elasticsearch, optimizing search capabilities and enhancing overall user experience.",
+            "Implemented techniques to optimize ETL scripts for synchronizing a high-volume product database with over 20,000 items, achieving a 90% decrease in processing time from 5 hours to just 30 minutes.",
+            "Developed a serverless chat module on AWS, leveraging the latest cloud technologies to ensure optimal scalability, security, and cost-effectiveness."
+        ]
+    },
+    {
+        "position": "Full-stack developer",
+        "period": "October 2020 - October 2021",
+        "company": "Meguz Telecom",
+        "websiteCompany": "https://enlacesplaya.com.mx/",
+        "shortDescription": "Create new features and maintain internal billing system and a SaaS for other schools",
+        "archivements": [
+            "Migrated a Vue SPA-based Point of Sale (POS) system to Nuxt.js SSR resulting in improved server-side rendering performance, enhanced user experience.",
+            "Developed a billing module for a school administration system, designed to automate and accurately charge enrollment and tuition fees, streamlining financial operations and improving the overall payment experience for students and parents.",
+            "Designed and developed a high-performance real-time delivery system, utilizing cutting-edge technologies and best practices to ensure end-to-end delivery tracking, optimized route planning, and enhanced customer satisfaction.",
+            "Maintained a critical internal package for CFDI, leveraged by both internal and external systems, ensuring integration, high performance, and compliance with government regulations."
+        ]
+    }
+]
