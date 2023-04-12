@@ -1,11 +1,13 @@
+import { Button } from "@/components/button";
+import Card from "@/components/card";
+import Experience from "@/components/experience";
+import { SectionComponent } from "@/components/section";
 import Head from "next/head";
 import Image from "next/image";
-import { SectionComponent } from "@/components/section";
 import Link from "next/link";
-import { MdOutlineArticle } from "react-icons/md";
-import { AiFillGithub, AiOutlineWhatsApp, AiOutlineMail } from "react-icons/ai";
+import { AiFillGithub, AiOutlineMail, AiOutlineWhatsApp } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import Card from "@/components/card";
+import ExperienceData from "./../data/experience.data.json";
 export default function Home() {
   return (
     <>
@@ -30,18 +32,18 @@ export default function Home() {
                 Creating product-driven software solutions
               </p>
               <div className="flex gap-5 pt-4">
-                <Link
-                  className="bg-[#1C68B0] text-white p-2.5 rounded-lg text-2xl hover:scale-105 cursor-pointer"
-                  href={"/"}
-                >
-                  Download CV
-                </Link>
-                <Link
-                  href={"#contact"}
-                  className="text-white text-2xl border border-[#1C68B0] rounded-lg p-2.5  hover:scale-105"
-                >
-                  Contact me 👋
-                </Link>
+                <Button
+                  color="primary"
+                  href="/"
+                  text="Download CV"
+                  size="2xl"
+                />
+                <Button
+                  color="secondary"
+                  href="#contact"
+                  text="Contact me 👋"
+                  size="2xl"
+                />
               </div>
             </div>
             <div className="block">
@@ -64,7 +66,7 @@ export default function Home() {
               image="/university-demo.webp"
               altImage="university-demo"
               bodyText="Lorem insum"
-              hasLiveDemo={false}
+              hasLiveDemo={true}
               liveDemoUrl={"/"}
               repository={"/"}
               technologies={["Vue", "tailwindcss"]}
@@ -83,36 +85,7 @@ export default function Home() {
           </p>
         </SectionComponent>
         <SectionComponent id="experience" title="Experience">
-          <div className="grid grid-cols-12 gap-4 mt-8">
-            <ol className="relative col-span-12">
-              <li className="mb-10 last:mb-0 border-l pl-6">
-                <span className="absolute flex items-center justify-center w-6 h-6 bg-[#1C68B0] rounded-full -left-3">
-                  <MdOutlineArticle color="#fff" size="16" />
-                </span>
-                <div className="flex flex-col justify-between items-start md:flex-row">
-                  <header>
-                    <h3 className="flex items-center mb-1 text-lg font-bold text-white">
-                      Full-stack developer
-                    </h3>
-                    <time className="block mb-2 text-white text-sm font-normal leading-none mt-2">
-                      Aug, 2023 - Aug 2024
-                    </time>
-                  </header>
-                  <Link
-                    href="/"
-                    className="text-white font-bold inline-flex items-center hover:text-[#1C68B0]"
-                  >
-                    31Rooms
-                  </Link>
-                </div>
-                <p className="text-[#CECECE] mt-2">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit magnis,
-                  nec rutrum sociis condimentum ac accumsan facilisi etiam
-                  sollicitudin
-                </p>
-              </li>
-            </ol>
-          </div>
+          <Experience data={ExperienceData} />
         </SectionComponent>
         <SectionComponent id="contact" title="Contact me">
           <div className="flex flex-col md:flex-row justify-start gap-10">
