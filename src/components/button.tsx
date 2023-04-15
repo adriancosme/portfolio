@@ -3,10 +3,11 @@ interface ButtonProps {
   href?: string;
   color: "primary" | "secondary";
   size: string;
+  target?: string;
 }
 import Link from "next/link";
 
-export const Button = ({ text, href, color, size }: ButtonProps) => {
+export const Button = ({ text, href, color, size, target }: ButtonProps) => {
   const bgColorClass = color === "primary" ? "bg-[#1C68B0]" : "";
   const isSecondary = color === "secondary";
   const borderedClass = isSecondary ? "border border-[#1C68B0]" : "";
@@ -22,6 +23,7 @@ export const Button = ({ text, href, color, size }: ButtonProps) => {
     <Link
       className={`${bgColorClass} ${borderedClass} text-white p-2.5 rounded-lg text-${size} hover:scale-105 cursor-pointer`}
       href={href}
+      target={target}
     >
       {text}
     </Link>
