@@ -8,6 +8,9 @@ import Link from "next/link";
 import { AiFillGithub, AiOutlineMail, AiOutlineWhatsApp } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import ExperienceData from "./../data/experience.data.json";
+import AboutMe from "../data/about.data.json";
+import ProjectsData from "../data/projects.data.json";
+
 export default function Home() {
   return (
     <>
@@ -61,28 +64,24 @@ export default function Home() {
         </section>
         <SectionComponent id="projects" title="Projects">
           <div className="grid grid-cols-12 gap-5 mt-8">
-            <Card
-              title="University Demo"
-              image="/university-demo.webp"
-              altImage="university-demo"
-              bodyText="Lorem insum"
-              hasLiveDemo={true}
-              liveDemoUrl={"/"}
-              repository={"/"}
-              technologies={["Vue", "tailwindcss"]}
-            />
+            {ProjectsData.map((project, index) => (
+              <Card
+                key={index}
+                title={project.title}
+                image={project.image}
+                altImage={project.title}
+                bodyText={project.description}
+                hasLiveDemo={project.hasLiveDemo}
+                liveDemoUrl={project.demoUrl}
+                hasRepository={project.hasRepository}
+                repository={project.repository}
+                technologies={project.stack}
+              />
+            ))}
           </div>
         </SectionComponent>
         <SectionComponent id="about-me" title="About me">
-          <p className="mt-8 text-white">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit, lacus tempus
-            laoreet pellentesque ridiculus nam, etiam id gravida hac mi nisl.
-            Lectus scelerisque platea primis auctor consequat a arcu, nisl
-            dictum maecenas duis nulla gravida egestas, pharetra penatibus porta
-            nisi potenti et. Habitant quis fermentum sociis montes libero
-            elementum eget, aptent integer diam feugiat hac ornare velit, in
-            hendrerit augue litora mattis tellus.
-          </p>
+          <p className="mt-8 text-white">{AboutMe.text}</p>
         </SectionComponent>
         <SectionComponent id="experience" title="Experience">
           <Experience data={ExperienceData} />
