@@ -9,6 +9,7 @@ interface CardProps {
   title: string;
   bodyText: string;
   technologies: string[];
+  hasRepository: boolean;
   repository: string;
   hasLiveDemo: boolean;
   liveDemoUrl: string;
@@ -20,6 +21,7 @@ const Card = ({
   title,
   bodyText,
   technologies,
+  hasRepository,
   repository,
   hasLiveDemo,
   liveDemoUrl,
@@ -27,9 +29,9 @@ const Card = ({
   return (
     <article className="group col-span-12 lg:col-span-4 border rounded-3xl shadow-md border-gray-700 relative bg-[#CECECE] ">
       <header>
-        <div className="block">
-          <section className="overflow-hidden rounded-t-3xl relative bg-white">
-            <Image src={image} alt={altImage} width={400} height={600} />
+        <div className="block">        
+          <section className="overflow-hidden rounded-t-3xl relative bg-white h-40">
+            <Image src={image} alt={altImage} width={400} height={200} className="object-cover object-center" />
           </section>
         </div>
         <h3 className="text-[#20222C] px-4 text-lg font-bold mt-3">{title}</h3>
@@ -46,9 +48,23 @@ const Card = ({
           })}
         </div>
         <div className="flex gap-2 mt-4">
-          <Button color="primary" href="/" text="Code" size="base" />
+          {hasRepository && (
+            <Button
+              color="primary"
+              href={repository}
+              text="Code"
+              size="base"
+              target="_blank"
+            />
+          )}
           {hasLiveDemo && (
-            <Button color="primary" href="/" text="Live Demo" size="base" />
+            <Button
+              color="primary"
+              href={liveDemoUrl}
+              text="Website"
+              size="base"
+              target="_blank"
+            />
           )}
         </div>
       </footer>
