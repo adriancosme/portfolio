@@ -1,0 +1,79 @@
+[
+    {
+        "image": "/mayoreo.webp",
+        "title": "Mayoreo Cardenas",
+        "description": "Elasticsearch implementation and website optimization",
+        "stack": [
+            "Laravel",
+            "PHP",
+            "Elasticsearch",
+            "Next.js",
+            "MUI"
+        ],
+        "hasRepository": false,
+        "repository": "",
+        "hasLiveDemo": true,
+        "demoUrl": "https://www.mayoreocardenas.com/"
+    },
+    {
+        "image": "/icgcaor-site.png",
+        "title": "Web scrapping app",
+        "description": "App to scrap a site and get products information and export data to CSV",
+        "stack": [
+            "React",
+            "MUI",
+            "NestJs",
+            "MongoDB",
+            "Puppeteer",
+            "TypeScript"
+        ],
+        "hasRepository": true,
+        "repository": "https://github.com/adriancosme/icgcaor-site",
+        "hasLiveDemo": true,
+        "demoUrl": "https://icgcaor-site.vercel.app/"
+    },
+    {
+        "image": "/university-demo.webp",
+        "title": "Chat application",
+        "description": "Chat app serverless using AWS Lamdba and API Gateway with push notification",
+        "stack": [
+            "Javascript",
+            "MongoDB",
+            "AWS Lambda",
+            "API Gateway"            
+        ],
+        "hasRepository": true,
+        "repository": "https://github.com/adriancosme/chat-serverless-aws",
+        "hasLiveDemo": false,
+        "demoUrl": ""
+    },    
+    {
+        "image": "/razar-app.webp",
+        "title": "Razar",
+        "description": "Application to get a random activity",
+        "stack": [
+            "Android",
+            "Kotlin"
+        ],
+        "hasRepository": true,
+        "repository": "https://github.com/adriancosme/razar",
+        "hasLiveDemo": false,
+        "demoUrl": ""
+    },
+    {
+        "image": "/university-demo.webp",
+        "title": "University demo app",
+        "description": "Demo app with authentication and simple API to provide data",
+        "stack": [
+            "TypeScript",
+            "Vue",
+            "Nestjs",            
+            "MySQL",
+            "TypeORM"
+        ],
+        "hasRepository": true,
+        "repository": "https://github.com/adriancosme/university-demo",
+        "hasLiveDemo": false,
+        "demoUrl": ""
+    }
+]
