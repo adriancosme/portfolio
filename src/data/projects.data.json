@@ -33,7 +33,7 @@
         "demoUrl": "https://icgcaor-site.vercel.app/"
     },
     {
-        "image": "/university-demo.webp",
+        "image": "/chat.webp",
         "title": "Chat application",
         "description": "Chat app serverless using AWS Lamdba and API Gateway with push notification",
         "stack": [
