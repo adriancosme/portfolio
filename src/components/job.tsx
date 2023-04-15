@@ -19,7 +19,7 @@ const Job = ({
   archivements,
 }: JobProps) => {
   return (
-    <li className="mb-10 last:mb-0 border-l pl-6">
+    <li className="mb-2 last:mb-0 border-l pl-6">
       <span className="absolute flex items-center justify-center w-6 h-6 bg-[#1C68B0] rounded-full -left-3">
         <MdOutlineArticle color="#fff" size="16" />
       </span>
