@@ -37,9 +37,10 @@ export default function Home() {
               <div className="flex gap-5 pt-4 flex-wrap">
                 <Button
                   color="primary"
-                  href="/"
+                  href="/EdwinCosmeCV.pdf"
                   text="Download CV"
                   size="2xl"
+                  target="_blank"
                 />
                 <Button
                   color="secondary"
