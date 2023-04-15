@@ -31,7 +31,7 @@ export default function Home() {
               <p className="text-white text-2xl pt-8 max-w-md">
                 Creating product-driven software solutions
               </p>
-              <div className="flex gap-5 pt-4">
+              <div className="flex gap-5 pt-4 flex-wrap">
                 <Button
                   color="primary"
                   href="/"
