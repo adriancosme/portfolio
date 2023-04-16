@@ -55,7 +55,8 @@
             "Android",
             "Kotlin",
             "NestJs",
-            "MySQL"
+            "MySQL",
+            "TypeORM"
         ],
         "hasRepository": true,
         "repository": "https://github.com/adriancosme/razar",
