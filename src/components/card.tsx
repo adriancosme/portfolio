@@ -27,7 +27,7 @@ const Card = ({
   liveDemoUrl,
 }: CardProps) => {
   return (
-    <article className="group col-span-12 lg:col-span-4 border rounded-3xl shadow-md border-gray-700 relative bg-[#CECECE] ">
+    <article className="group col-span-12 lg:col-span-4 border rounded-3xl shadow-md border-gray-700 relative bg-[#CECECE] flex flex-col justify-between">
       <header>
         <div className="block">        
           <section className="overflow-hidden rounded-t-3xl relative bg-white h-40">
