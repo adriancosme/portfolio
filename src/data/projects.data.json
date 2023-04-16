@@ -53,7 +53,9 @@
         "description": "Application to get a random activity",
         "stack": [
             "Android",
-            "Kotlin"
+            "Kotlin",
+            "NestJs",
+            "MySQL"
         ],
         "hasRepository": true,
         "repository": "https://github.com/adriancosme/razar",
