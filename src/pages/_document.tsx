@@ -5,23 +5,7 @@ import Script from "next/script";
 export default function Document() {
   return (
     <Html lang="en">
-      <Head>
-        {/* <!-- Google tag (gtag.js) --> */}
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-LX2JC2FZX1"
-        />
-        <Script
-          id="google-analytics"
-          dangerouslySetInnerHTML={{
-            __html: `  window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-          
-            gtag('config', 'G-LX2JC2FZX1');`,
-          }}
-        />
-      </Head>
+      <Head />      
       <body className="bg-[#20222C] scroll-smooth">
         <Header pages={HeaderPagesData} />
         <Main />
