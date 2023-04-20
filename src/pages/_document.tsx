@@ -14,13 +14,11 @@ export default function Document() {
         <Script
           id="google-analytics"
           dangerouslySetInnerHTML={{
-            __html: `
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-
-                    gtag('config', 'G-LX2JC2FZX1');
-                  `,
+            __html: `  window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-LX2JC2FZX1');`,
           }}
         />
       </Head>
