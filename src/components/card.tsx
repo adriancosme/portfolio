@@ -13,6 +13,7 @@ interface CardProps {
   repository: string;
   hasLiveDemo: boolean;
   liveDemoUrl: string;
+  index: number;
 }
 
 const Card = ({
@@ -25,13 +26,14 @@ const Card = ({
   repository,
   hasLiveDemo,
   liveDemoUrl,
+  index
 }: CardProps) => {
   return (
     <article className="group col-span-12 lg:col-span-4 border rounded-3xl shadow-md border-gray-700 relative bg-[#CECECE] flex flex-col justify-between">
       <header>
         <div className="block">        
           <section className="overflow-hidden rounded-t-3xl relative bg-white h-40">
-            <Image src={image} alt={altImage} width={400} height={200} className="object-cover object-center" />
+            <Image src={image} alt={altImage} width={400} height={200} className="object-cover object-center" priority={index < 2} />
           </section>
         </div>
         <h3 className="text-[#20222C] px-4 text-lg font-bold mt-3">{title}</h3>

@@ -50,12 +50,12 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="block">
+            <div className="block w-auto h-auto">
               <section className="overflow-hidden rounded-3xl relative bg-white">
                 <Image
                   src="/photo.jpg"
                   alt="avatar"
-                  width={190}
+                  width={200}
                   height={200}
                   priority
                 />
@@ -68,6 +68,7 @@ export default function Home() {
             {ProjectsData.map((project, index) => (
               <Card
                 key={index}
+                index={index}
                 title={project.title}
                 image={project.image}
                 altImage={project.title}
