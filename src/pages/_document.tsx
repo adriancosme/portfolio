@@ -1,7 +1,6 @@
-import { Html, Head, Main, NextScript } from "next/document";
 import Header from "@/components/header";
+import { Head, Html, Main, NextScript } from "next/document";
 import HeaderPagesData from "../data/header-pages.json";
-import Script from "next/script";
 export default function Document() {
   return (
     <Html lang="en">
