@@ -1,7 +1,38 @@
 [
     {
+        "image": "/infojobs-provider.webp",
+        "title": "Infojobs provider package",
+        "description": "NextAuth provider for infojobs",
+        "stack": [
+            "NextAuth",
+            "Node.js",
+            "TypeScript"
+        ],
+        "hasRepository": true,
+        "repository": "https://github.com/adriancosme/infojobs-next-auth-provider",
+        "hasLiveDemo": true,
+        "demoUrl": "https://www.npmjs.com/package/infojobs-next-auth-provider"
+    },
+    {
+        "image": "/cv.webp",
+        "title": "CvCheckr",
+        "description": "Analize your CV and get feedback. Project created for midudev's hackathon",
+        "stack": [
+            "Next.js",
+            "Node.js",
+            "OpenAI",
+            "NextAuth",
+            "TypeScript",
+            "OAuth2"
+        ],
+        "hasRepository": true,
+        "repository": "https://github.com/adriancosme/infojobs-hackathon",
+        "hasLiveDemo": true,
+        "demoUrl": "https://cvcheckr.vercel.app/"
+    },
+    {
         "image": "/mayoreo.webp",
-        "title": "Mayoreo Cardenas",
+        "title": "Ecommerce optimization",
         "description": "Elasticsearch implementation and website optimization",
         "stack": [
             "Laravel",
