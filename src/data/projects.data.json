@@ -1,5 +1,20 @@
 [
     {
+        "image": "/quotes.webp",
+        "title": "Quotes Generator",
+        "description": "Generate and download quotes",
+        "stack": [                        
+            "TypeScript",
+            "AWS Amplify",
+            "AWS Lambda",
+            "AWS DynamoDB"
+        ],
+        "hasRepository": true,
+        "repository": "https://github.com/adriancosme/quote-generator",
+        "hasLiveDemo": true,
+        "demoUrl": "https://production.d3nfgs7ukme2kf.amplifyapp.com/"
+    },
+    {
         "image": "/infojobs-provider.webp",
         "title": "Infojobs provider package",
         "description": "NextAuth provider for infojobs",
