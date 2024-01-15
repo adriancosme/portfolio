@@ -8,6 +8,7 @@ export default function Document() {
       <Head>
         <Script
           id="Unami"
+          strategy="beforeInteractive"
           src="https://us.umami.is/script.js"
           data-website-id="2b36c498-86c2-4b60-98dc-6b614ccca5e8"
         />
