@@ -3,7 +3,7 @@ import Card from "@/components/card";
 import Experience from "@/components/experience";
 import { SectionComponent } from "@/components/section";
 import Head from "next/head";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import { AiFillGithub, AiOutlineMail, AiOutlineWhatsApp } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -61,7 +61,10 @@ export default function Home() {
                 width={200}
                 height={200}
                 priority
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </section>
           </div>
         </div>

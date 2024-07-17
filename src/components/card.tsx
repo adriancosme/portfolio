@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import Chip from "./chip";
 import { Button } from "./button";
@@ -33,7 +33,17 @@ const Card = ({
       <header>
         <div className="block">        
           <section className="overflow-hidden rounded-t-3xl relative bg-white h-40">
-            <Image src={image} alt={altImage} width={400} height={200} className="object-cover object-center" priority={index < 2} />
+            <Image
+              src={image}
+              alt={altImage}
+              width={400}
+              height={200}
+              className="object-cover object-center"
+              priority={index < 2}
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </section>
         </div>
         <h3 className="text-[#20222C] px-4 text-lg font-bold mt-3">{title}</h3>
