@@ -27,7 +27,7 @@ export default function Home() {
           key="description"
         />
       </Head>
-      <main className="flex min-h-screen flex-col py-8 bg-[#20222C]">
+      <main className="flex flex-col items-center w-full px-4 xl:px-0 max-w-xl xl:max-w-4xl mx-auto py-8">
         <section id="home" className="max-w-md mx-auto container lg:max-w-5xl">
           <div className="flex justify-between">
             <div className="max-w-2xl text-left">
@@ -54,7 +54,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="block w-auto h-auto">
+            <div className="w-auto h-auto hidden md:block">
               <section className="overflow-hidden rounded-3xl relative bg-white">
                 <Image
                   src="/photo.jpg"

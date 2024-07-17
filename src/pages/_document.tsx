@@ -13,7 +13,7 @@ export default function Document() {
           data-website-id="2b36c498-86c2-4b60-98dc-6b614ccca5e8"
         />
       </Head>
-      <body className="bg-[#20222C] scroll-smooth">
+      <body className="bg-[#1f2028] scroll-smooth">
         <Header pages={HeaderPagesData} />
         <Main />
         <NextScript />
