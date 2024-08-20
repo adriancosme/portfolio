@@ -40,7 +40,7 @@ export default function RootLayout({
                     <h2 className="sr-only">Footer</h2>
                     <div className="relative flex items-center pb-2">
                         <span className="text-[#CECECE] text-xs">
-                            © 2023 Edwin Cosme. Built with Next.js 13.3.0
+                            © 2023 Edwin Cosme. Built with Next.js 14
                         </span>
                     </div>
                 </footer>
