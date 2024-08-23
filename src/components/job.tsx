@@ -36,7 +36,7 @@ const Job = ({
           href={websiteCompany}
           target="_blank"
           className="text-white font-bold inline-flex items-center hover:text-[#1C68B0]"
-          legacyBehavior>
+        >
           {company}
         </Link>
       </div>

@@ -1,0 +1,45 @@
+.nav-item:hover .background,
+.nav-item:focus .background {
+    opacity: 1;
+}
+
+#menuMobileContent {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    scrollbar-gutter: stable;
+}
+
+#menuMobileContent.open {
+    opacity: 1 !important;
+    pointer-events: all;
+}
+
+.underlined {
+    position: relative;
+    white-space: nowrap;
+}
+
+.underlined,
+.underlined:focus {
+    text-decoration: none !important;
+}
+
+.underlined::after {
+    content: "";
+    bottom: -4px;
+    left: 0;
+    display: block;
+    height: 2px;
+    position: absolute;
+    transform-origin: left;
+    transition: transform .25s ease;
+    width: 100%;
+}
+
+.active.underlined:after,
+.underlined:focus:after,
+.underlined:hover:after {
+    background-color: currentColor;
+    transform: scaleX(1)
+}

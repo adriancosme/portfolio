@@ -12,16 +12,13 @@ import ExperienceData from "./../data/experience.data.json";
 
 export default function Home() {
     return (
-        <main className="flex flex-col items-center w-full px-4 xl:px-0 max-w-xl xl:max-w-4xl mx-auto py-8">
+        <main className="flex flex-col items-center justify-center text-white">
             <section id="home" className="max-w-md mx-auto container lg:max-w-5xl">
                 <div className="flex justify-between">
                     <div className="max-w-2xl text-left">
-                        <h1 className="font-bold text-white text-5xl">Edwin Cosme</h1>
-                        <h2 className="text-[#1C68B0] text-3xl font-bold">
-                            Full-stack developer
-                        </h2>
-                        <p className="text-white text-2xl pt-8 max-w-md">
-                            Creating product-driven software solutions
+                        <h1 className="font-bold text-white text-3xl md:text-4xl">Hi, I&apos;m Edwin Cosme, I&apos;m a Software Engineer.</h1>
+                        <p className="text-accent text-3xl md:text-3xl pt-8 max-w-md">
+                            I help people build their next big thing.
                         </p>
                         <div className="flex gap-5 pt-4 flex-wrap">
                             <Button
@@ -38,20 +35,6 @@ export default function Home() {
                                 size="2xl"
                             />
                         </div>
-                    </div>
-                    <div className="w-auto h-auto hidden md:block">
-                        <section className="overflow-hidden rounded-3xl relative bg-white">
-                            <Image
-                                src="/photo.jpg"
-                                alt="avatar"
-                                width={200}
-                                height={200}
-                                priority
-                                style={{
-                                    maxWidth: "100%",
-                                    height: "auto"
-                                }} />
-                        </section>
                     </div>
                 </div>
             </section>
@@ -95,32 +78,32 @@ export default function Home() {
                                 about="Github profile page"
                                 target="_blank"
                                 className="group flex items-center justify-center w-11 h-11 bg-white hover:bg-[#1C68B0] rounded-full -left-3 cursor-pointer"
-                                legacyBehavior>
-                                <AiFillGithub className="text-black group-hover:text-white group-hover:scale-110" />
+                            >
+                                <AiFillGithub className="text-black group-hover:text-white group-hover:scale-110" size={32} />
                             </Link>
                             <Link
                                 href="https://www.linkedin.com/in/edwin-cosme/"
                                 about="Linkedin profile page"
                                 target="_blank"
                                 className="group flex items-center justify-center w-11 h-11 bg-white hover:bg-[#1C68B0] rounded-full -left-3 cursor-pointer"
-                                legacyBehavior>
-                                <FaLinkedinIn className="text-black group-hover:text-white" />
+                            >
+                                <FaLinkedinIn className="text-black group-hover:text-white" size={32} />
                             </Link>
                             <Link
-                                href="https://wa.me/19841536959"
+                                href="https://wa.me/+529841536959"
                                 about="WhatsApp number"
                                 target="_blank"
                                 className="group flex items-center justify-center w-11 h-11 bg-white hover:bg-[#1C68B0] rounded-full -left-3 cursor-pointer"
-                                legacyBehavior>
-                                <AiOutlineWhatsApp className="text-black group-hover:text-white" />
+                            >
+                                <AiOutlineWhatsApp className="text-black group-hover:text-white" size={32} />
                             </Link>
                             <Link
                                 href="mailto:adriancosme15@gmail.com"
                                 about="Email address"
                                 target="_blank"
                                 className="group flex items-center justify-center w-11 h-11 bg-white hover:bg-[#1C68B0] rounded-full -left-3 cursor-pointer"
-                                legacyBehavior>
-                                <AiOutlineMail className="text-black group-hover:text-white" />
+                            >
+                                <AiOutlineMail className="text-black group-hover:text-white" size={32} />
                             </Link>
                         </section>
                     </section>

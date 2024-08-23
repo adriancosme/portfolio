@@ -8,6 +8,10 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --background-color: #1f2028;
+  --color-primary: #20222C;
+  --color-secondary: #1C68B0;
+  --color-accent: #CECECE;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,24 +23,30 @@
 }
 
 html {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial;
+  background: var(--background-color);
+  scrollbar-gutter: stable;
   scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial;
+  &:has(dialog[open]) {
+    overflow: hidden;
+  }
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
+main {
+  position: relative;
+}
+
+/* Hiding class, making content visible only to screen readers but not visually */
+/* "sr" meaning "screen-reader" */
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
   height: 1px;
-  padding: 0;
-  margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }

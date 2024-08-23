@@ -24,7 +24,7 @@ export const Button = ({ text, href, color, size, target }: ButtonProps) => {
       className={`${bgColorClass} ${borderedClass} text-white p-2.5 rounded-lg text-${size} hover:scale-105 cursor-pointer`}
       href={href}
       target={target}
-      legacyBehavior>
+    >
       {text}
     </Link>
   );

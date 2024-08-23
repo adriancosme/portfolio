@@ -1,4 +1,4 @@
-import Header from "@/components/header";
+import Navbar from "@/components/navbar";
 import { Metadata } from "next";
 import { Montserrat } from 'next/font/google';
 import HeaderPagesData from "../data/header-pages.json";
@@ -33,10 +33,12 @@ export default function RootLayout({
                     data-website-id="2b36c498-86c2-4b60-98dc-6b614ccca5e8"
                 />
             </head>
-            <body className={`${montserrat.className} bg-[#1f2028] scroll-smooth`}>
-                <Header pages={HeaderPagesData} />
-                {children}
-                <footer className="bg-[#20222C] w-full flex justify-center">
+            <body className={`overflow-x-hidden selection:bg-primary selection:text-secondary ${montserrat.className} bg-primary scroll-smooth`}>
+                <Navbar pages={HeaderPagesData} />
+                <div id="main-content" className="mx-auto min-h-screen max-w-6xl px-4 pt-2 selection:bg-primary selection:text-secondary md:pt-1 lg:px-10">
+                    {children}
+                </div>
+                <footer className="mt-4 bg-primary w-full flex justify-center">
                     <h2 className="sr-only">Footer</h2>
                     <div className="relative flex items-center pb-2">
                         <span className="text-[#CECECE] text-xs">
