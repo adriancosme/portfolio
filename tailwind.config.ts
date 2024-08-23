@@ -31,12 +31,6 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      plugins: [
-        plugin(function ({ addVariant }) {
-          addVariant("any-hover", "@media (any-hover: hover) { &:hover }")
-          addVariant("mobile", "@media (any-hover: none) { & }")
-        })
-      ],
     },
   },
   plugins: [],
