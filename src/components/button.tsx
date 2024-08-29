@@ -8,7 +8,7 @@ interface ButtonProps {
 import Link from "next/link";
 
 export const Button = ({ text, href, color, size, target }: ButtonProps) => {
-  const bgColorClass = color === "primary" ? "bg-[#1C68B0]" : "";
+  const bgColorClass = color === "primary" ? "bg-secondary" : "";
   const isSecondary = color === "secondary";
   const borderedClass = isSecondary ? "border border-[#1C68B0]" : "";
   if (!href)
@@ -21,7 +21,7 @@ export const Button = ({ text, href, color, size, target }: ButtonProps) => {
     );
   return (
     <Link
-      className={`${bgColorClass} ${borderedClass} text-white p-2.5 rounded-lg text-${size} hover:scale-105 cursor-pointer`}
+      className={`${bgColorClass} ${borderedClass} text-white p-2.5 rounded-lg text-${size} hover:scale-105 cursor-pointer h-auto`}
       href={href}
       target={target}
     >

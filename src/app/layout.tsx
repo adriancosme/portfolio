@@ -35,9 +35,7 @@ export default function RootLayout({
             </head>
             <body className={`overflow-x-hidden selection:bg-primary selection:text-secondary ${montserrat.className} bg-primary scroll-smooth`}>
                 <Navbar pages={HeaderPagesData} />
-                <div id="main-content" className="mx-auto min-h-screen max-w-6xl px-4 pt-2 selection:bg-primary selection:text-secondary md:pt-1 lg:px-10">
-                    {children}
-                </div>
+                {children}
                 <footer className="mt-4 bg-primary w-full flex justify-center">
                     <h2 className="sr-only">Footer</h2>
                     <div className="relative flex items-center pb-2">

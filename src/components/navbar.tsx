@@ -23,7 +23,7 @@ export const NavbarComponent = ({ pages }: NavbarPropsType): JSX.Element => {
     document.body.classList.toggle("lg:overflow-auto");
   }, [isOpen]);
   return (
-    <header className={`px-5vw py-9 lg:py-12`}>
+    <div className={`px-5vw py-9 lg:py-12`}>
       <nav className={`mx-auto text-primary flex max-w-8xl items-center justify-between ${isOpen ? "open" : ""}`}>
         <Link href="/" className="flex items-center justify-center">
           <div className="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
@@ -77,7 +77,7 @@ export const NavbarComponent = ({ pages }: NavbarPropsType): JSX.Element => {
           </div>
         </div>
       </nav>
-    </header>
+    </div>
   );
 };
 
