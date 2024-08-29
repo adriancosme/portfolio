@@ -13,8 +13,6 @@ import ProjectsData from "../data/projects.data.json";
 import ExperienceData from "./../data/experience.data.json";
 
 export default function Home() {
-
-
     return (
         <>
             <header id="home" className="relative mx-10vw">

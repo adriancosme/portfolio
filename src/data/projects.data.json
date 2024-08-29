@@ -3,11 +3,27 @@
         "image": "/quotes.webp",
         "title": "Quotes Generator",
         "description": "Generate and download quotes",
-        "stack": [                        
-            "TypeScript",
-            "AWS Amplify",
-            "AWS Lambda",
-            "AWS DynamoDB"
+        "stack": [
+            {
+                "text": "TypeScript",
+                "color": "rgba(49, 120, 198, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+            },
+            {
+                "text": "AWS Amplify",
+                "color": "rgba(255, 153, 0, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+            },
+            {
+                "text": "AWS Lambda",
+                "color": "rgba(255, 153, 0, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+            },
+            {
+                "text": "AWS DynamoDB",
+                "color": "rgba(64, 83, 214, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+            }
         ],
         "hasRepository": true,
         "repository": "https://github.com/adriancosme/quote-generator",
@@ -19,9 +35,21 @@
         "title": "Infojobs provider package",
         "description": "NextAuth provider for infojobs",
         "stack": [
-            "NextAuth",
-            "Node.js",
-            "TypeScript"
+            {
+                "text": "NextAuth",
+                "color": "rgba(0, 0, 0, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+            },
+            {
+                "text": "Node.js",
+                "color": "rgba(140, 200, 75, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+            },
+            {
+                "text": "TypeScript",
+                "color": "rgba(49, 120, 198, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+            }
         ],
         "hasRepository": true,
         "repository": "https://github.com/adriancosme/infojobs-next-auth-provider",
@@ -31,14 +59,38 @@
     {
         "image": "/cv.webp",
         "title": "CvCheckr",
-        "description": "Analize your CV and get feedback. Project created for midudev's hackathon",
+        "description": "Analyze your CV and get feedback. Project created for midudev's hackathon",
         "stack": [
-            "Next.js",
-            "Node.js",
-            "OpenAI",
-            "NextAuth",
-            "TypeScript",
-            "OAuth2"
+            {
+                "text": "Next.js",
+                "color": "rgba(0, 0, 0, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+            },
+            {
+                "text": "OpenAI",
+                "color": "rgba(16, 163, 127, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/openai.svg"
+            },
+            {
+                "text": "TypeScript",
+                "color": "rgba(49, 120, 198, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+            },
+            {
+                "text": "Node.js",
+                "color": "rgba(140, 200, 75, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+            },
+            {
+                "text": "NextAuth",
+                "color": "rgba(0, 0, 0, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+            },
+            {
+                "text": "OAuth2",
+                "color": "rgba(74, 144, 226, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oauth/oauth-original.svg"
+            }
         ],
         "hasRepository": true,
         "repository": "https://github.com/adriancosme/infojobs-hackathon",
@@ -50,11 +102,31 @@
         "title": "Ecommerce optimization",
         "description": "Elasticsearch implementation and website optimization",
         "stack": [
-            "Laravel",
-            "PHP",
-            "Elasticsearch",
-            "Next.js",
-            "MUI"
+            {
+                "text": "Laravel",
+                "color": "rgba(255, 45, 32, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
+            },
+            {
+                "text": "PHP",
+                "color": "rgba(119, 123, 180, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+            },
+            {
+                "text": "Elasticsearch",
+                "color": "rgba(0, 85, 113, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/elasticsearch/elasticsearch-original.svg"
+            },
+            {
+                "text": "Next.js",
+                "color": "rgba(0, 0, 0, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+            },
+            {
+                "text": "MUI",
+                "color": "rgba(0, 129, 203, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg"
+            }
         ],
         "hasRepository": false,
         "repository": "",
@@ -66,12 +138,36 @@
         "title": "Web scrapping app",
         "description": "Application to scrap a site and get products information and export data to CSV",
         "stack": [
-            "React",
-            "MUI",
-            "NestJs",
-            "MongoDB",
-            "Puppeteer",
-            "TypeScript"
+            {
+                "text": "React",
+                "color": "rgba(97, 218, 251, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+            },
+            {
+                "text": "MUI",
+                "color": "rgba(0, 129, 203, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg"
+            },
+            {
+                "text": "NestJs",
+                "color": "rgba(224, 35, 78, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg"
+            },
+            {
+                "text": "MongoDB",
+                "color": "rgba(71, 162, 72, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+            },
+            {
+                "text": "Puppeteer",
+                "color": "rgba(64, 181, 164, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/puppeteer/puppeteer-original.svg"
+            },
+            {
+                "text": "TypeScript",
+                "color": "rgba(49, 120, 198, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+            }
         ],
         "hasRepository": true,
         "repository": "https://github.com/adriancosme/icgcaor-site",
@@ -81,47 +177,67 @@
     {
         "image": "/chat.webp",
         "title": "Chat application",
-        "description": "Chat app serverless using AWS Lamdba and API Gateway with push notification",
+        "description": "Chat app serverless using AWS Lambda and API Gateway with push notification",
         "stack": [
-            "Javascript",
-            "MongoDB",
-            "AWS Lambda",
-            "API Gateway"            
+            {
+                "text": "Javascript",
+                "color": "rgba(247, 223, 30, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            },
+            {
+                "text": "MongoDB",
+                "color": "rgba(71, 162, 72, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+            },
+            {
+                "text": "AWS Lambda",
+                "color": "rgba(255, 153, 0, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+            },
+            {
+                "text": "API Gateway",
+                "color": "rgba(255, 79, 139, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+            }
         ],
         "hasRepository": true,
         "repository": "https://github.com/adriancosme/chat-serverless-aws",
         "hasLiveDemo": false,
         "demoUrl": ""
-    },    
+    },
     {
         "image": "/razar-app.webp",
         "title": "Razar",
         "description": "Application to get a random activity",
         "stack": [
-            "Android",
-            "Kotlin",
-            "NestJs",
-            "MySQL",
-            "TypeORM"
+            {
+                "text": "Android",
+                "color": "rgba(61, 220, 132, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"
+            },
+            {
+                "text": "Kotlin",
+                "color": "rgba(127, 82, 255, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg"
+            },
+            {
+                "text": "NestJs",
+                "color": "rgba(224, 35, 78, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg"
+            },
+            {
+                "text": "MySQL",
+                "color": "rgba(68, 121, 161, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+            },
+            {
+                "text": "TypeORM",
+                "color": "rgba(255, 71, 87, 0.2)",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typeorm/typeorm-original.svg"
+            }
         ],
         "hasRepository": true,
         "repository": "https://github.com/adriancosme/razar",
-        "hasLiveDemo": false,
-        "demoUrl": ""
-    },
-    {
-        "image": "/university-demo.webp",
-        "title": "University demo app",
-        "description": "Demo pplication with authentication and simple API to provide data",
-        "stack": [
-            "TypeScript",
-            "Vue",
-            "Nestjs",            
-            "MySQL",
-            "TypeORM"
-        ],
-        "hasRepository": true,
-        "repository": "https://github.com/adriancosme/university-demo",
         "hasLiveDemo": false,
         "demoUrl": ""
     }

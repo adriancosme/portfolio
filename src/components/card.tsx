@@ -3,12 +3,18 @@ import Link from "next/link";
 import Chip from "./chip";
 import { Button } from "./button";
 
+interface technology {
+  text: string;
+  color: string;
+  icon: string;
+}
+
 interface CardProps {
   image: string;
   altImage: string;
   title: string;
   bodyText: string;
-  technologies: string[];
+  technologies: technology[];
   hasRepository: boolean;
   repository: string;
   hasLiveDemo: boolean;
@@ -17,67 +23,28 @@ interface CardProps {
 }
 
 const Card = ({
-  image,
-  altImage,
   title,
   bodyText,
   technologies,
   hasRepository,
   repository,
-  hasLiveDemo,
-  liveDemoUrl,
   index
 }: CardProps) => {
   return (
-    <article className="group col-span-12 lg:col-span-4 border rounded-3xl shadow-md border-gray-700 relative bg-[#CECECE] flex flex-col justify-between">
+    <article className="relative group col-span-12 lg:col-span-4 border rounded-3xl shadow-md border-gray-600">
       <header>
-        <div className="block">        
-          <section className="overflow-hidden rounded-t-3xl relative bg-white h-40">
-            <Image
-              src={image}
-              alt={altImage}
-              width={400}
-              height={200}
-              className="object-cover object-center"
-              priority={index < 2}
-              style={{
-                maxWidth: "100%",
-                height: "auto"
-              }} />
-          </section>
-        </div>
-        <h3 className="text-[#20222C] px-4 text-lg font-bold mt-3">{title}</h3>
+        <h3 className="text-gray-100 px-4 text-xl font-bold mt-3">{title}</h3>
       </header>
       <section className="mt-2">
-        <p className="text-[#20222C] px-4 text-md ">{bodyText}</p>
+        <p className="text-gray-400 px-4 text-lg ">{bodyText}</p>
       </section>
       <footer className="p-4">
-        <div className="flex flex-wrap gap-1">
-          {technologies?.map((text, index) => {
+        <div className="flex flex-wrap gap-3">
+          {technologies?.map(({ text, color, icon }, index) => {
             return (
-              <Chip key={`${text}-${index}`} text={text} color="primary" />
+              <Chip key={`${text}-${index}`} text={text} iconUrl={icon} color="secondary" hoverColor={color} />
             );
           })}
-        </div>
-        <div className="flex gap-2 mt-4">
-          {hasRepository && (
-            <Button
-              color="primary"
-              href={repository}
-              text="Code"
-              size="base"
-              target="_blank"
-            />
-          )}
-          {hasLiveDemo && (
-            <Button
-              color="primary"
-              href={liveDemoUrl}
-              text="Website"
-              size="base"
-              target="_blank"
-            />
-          )}
         </div>
       </footer>
     </article>
