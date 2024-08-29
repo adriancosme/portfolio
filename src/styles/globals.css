@@ -50,3 +50,7 @@ main {
   white-space: nowrap;
   width: 1px;
 }
+
+.chip:hover {
+  background-color: var(--chip-hover-color);
+}
