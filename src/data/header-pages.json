@@ -14,9 +14,5 @@
     {
         "name": "Experience",
         "to": "#experience"
-    },
-    {
-        "name": "Contact",
-        "to": "#contact"
     }
 ]
