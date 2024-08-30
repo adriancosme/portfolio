@@ -1,5 +1,4 @@
 import ArrowLink from "@/components/arrow-link";
-import { Button } from "@/components/button";
 import Card from "@/components/card";
 import Experience from "@/components/experience";
 import HeroImage from "@/components/hero-image";
@@ -58,7 +57,7 @@ export default function Home() {
                             I help people build their next big thing.
                         </p>
                         <p
-                            className="text-accent flex items-center text-lg md:text-lg pt-4 motion-safe:animate-hero-text-reveal"
+                            className="text-secondary flex items-center text-lg md:text-lg pt-8 motion-safe:animate-hero-text-reveal"
                             style={{
                                 "--hero-text-reveal-duration": "1.3s",
                                 "--hero-text-reveal-opacity-step-0": 0,
@@ -99,7 +98,7 @@ export default function Home() {
                             Playa del Carmen, Mexico
                         </p>
                         <p
-                            className="text-accent text-lg md:text-lg pt-4 pl-1.5 flex gap-2 items-center motion-safe:animate-hero-text-reveal"
+                            className="text-secondary text-lg md:text-lg pt-4 pl-1.5 flex gap-2 items-center motion-safe:animate-hero-text-reveal"
                             style={{
                                 "--hero-text-reveal-duration": "1.3s",
                                 "--hero-text-reveal-opacity-step-0": 0,
@@ -140,13 +139,6 @@ export default function Home() {
                                 "--hero-text-reveal-y-step-3": "0px",
                             } as CSSProperties}
                         >
-                            <Button
-                                color="primary"
-                                href="/EdwinCosmeCV.pdf"
-                                text="Download CV"
-                                size="2xl"
-                                target="_blank"
-                            />
                             <section about="Social links" className="flex gap-4">
                                 <Link
                                     href="https://github.com/adriancosme"

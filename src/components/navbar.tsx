@@ -36,7 +36,7 @@ export const NavbarComponent = ({ pages }: NavbarPropsType): JSX.Element => {
               return (
                 <li className="px-5 py-2" key={key}>
                   <Link
-                    className="underlined block whitespace-nowrap text-lg font-medium hover:text-white focus:outline-none text-accent"
+                    className="underlined block whitespace-nowrap text-lg font-medium hover:text-white focus:outline-none text-secondary"
                     href={`${page.to}`}
                     id={`nav-link-${key}`}
                   >

@@ -4,9 +4,7 @@ import defaultTheme from "tailwindcss/defaultTheme";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx}",
-    "./src/components/**/*.{js,ts,jsx,tsx}",
-    "./src/app/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -53,14 +51,6 @@ const config: Config = {
         "8xl": "96rem",
         "10vw": "10vw",
         "50vh": "50vh",
-      },
-      fontFamily: {
-        montserrat: ["Montserrat", "sans-serif"],
-      },
-      colors: {
-        primary: "var(--color-primary)",
-        secondary: "var(--color-secondary)",
-        accent: "var(--color-accent)",
       },
       screens: {
         xs: "360px",
