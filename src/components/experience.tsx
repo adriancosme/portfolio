@@ -5,7 +5,7 @@ interface ExperienceProps {
 }
 const Experience = ({ data }: ExperienceProps) => {
   return (
-    <div className="grid grid-cols-12 gap-4 mt-8">
+    <div className="grid grid-cols-12 gap-4">
       <ol className="relative col-span-12">
         {data?.map((job, index) => {
           return (
