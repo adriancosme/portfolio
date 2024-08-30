@@ -233,7 +233,7 @@
             {
                 "text": "TypeORM",
                 "color": "rgba(255, 71, 87, 0.2)",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typeorm/typeorm-original.svg"
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg"
             }
         ],
         "hasRepository": true,
