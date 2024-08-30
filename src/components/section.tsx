@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 interface SectionProps {
     id: string;
     title: string;
-    children: ReactNode
+    children: ReactNode | ReactNode[]
 }
 export const SectionComponent = ({ id, title, children }: SectionProps) => {
     return (
