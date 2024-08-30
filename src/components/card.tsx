@@ -1,7 +1,8 @@
-import Image from "next/image";
+import clsx from "clsx";
 import Link from "next/link";
+import { RiArrowRightUpLine } from "react-icons/ri";
+import { FaGithub } from "react-icons/fa";
 import Chip from "./chip";
-import { Button } from "./button";
 
 interface technology {
   text: string;
@@ -13,7 +14,7 @@ interface CardProps {
   image: string;
   altImage: string;
   title: string;
-  bodyText: string;
+  description: string;
   technologies: technology[];
   hasRepository: boolean;
   repository: string;
@@ -24,29 +25,63 @@ interface CardProps {
 
 const Card = ({
   title,
-  bodyText,
+  description,
   technologies,
   hasRepository,
   repository,
+  hasLiveDemo,
+  liveDemoUrl,
   index
 }: CardProps) => {
   return (
-    <article className="relative group col-span-12 lg:col-span-4 border rounded-3xl shadow-md border-gray-600">
-      <header>
-        <h3 className="text-gray-100 px-4 text-xl font-bold mt-3">{title}</h3>
-      </header>
-      <section className="mt-2">
-        <p className="text-gray-400 px-4 text-lg ">{bodyText}</p>
-      </section>
-      <footer className="p-4">
-        <div className="flex flex-wrap gap-3">
-          {technologies?.map(({ text, color, icon }, index) => {
-            return (
-              <Chip key={`${text}-${index}`} text={text} iconUrl={icon} color="secondary" hoverColor={color} />
-            );
-          })}
-        </div>
-      </footer>
+    <article className="relative group flex flex-col rounded-md border-[1px] border-neutral-300 px-3 py-4 shadow-sm dark:border-neutral-800">
+      <div className={clsx('flex flex-col space-y-3')}>
+        <header className="flex w-full items-center justify-between">
+          <div className="flex w-full items-center justify-between">
+            <div className="flex items-center space-x-[10px]">
+              {
+                hasLiveDemo ? (
+                  <Link
+                    href={liveDemoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center gap-[6px] font-medium decoration-neutral-500 decoration-dotted underline-offset-[5px] hover:underline"
+                  >
+                    <span className="text-gray-100">{title}</span>
+                    <RiArrowRightUpLine className="opacity-50 duration-200 group-hover:translate-x-[2px] group-hover:opacity-100" size={15} />
+                  </Link>
+                ) : (
+                  <p className="font-medium">{title}</p>
+                )
+              }
+            </div>
+            <div className="flex items-center gap-2">
+              {
+                hasRepository ? (
+                  <Link
+                    href={repository}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="opacity-75 transition-opacity duration-100 hover:opacity-100"
+                  >
+                    <FaGithub height={16} />
+                  </Link>
+                ) : null
+              }
+            </div>
+          </div>
+        </header>
+        <p className="truncate text-sm dark:text-neutral-400">{description}</p>
+        <footer className="">
+          <div className="flex flex-wrap gap-3">
+            {technologies?.map(({ text, color, icon }, index) => {
+              return (
+                <Chip key={`${text}-${index}`} text={text} iconUrl={icon} color="secondary" hoverColor={color} />
+              );
+            })}
+          </div>
+        </footer>
+      </div>
     </article>
   );
 };
