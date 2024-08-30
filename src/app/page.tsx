@@ -5,13 +5,39 @@ import HeroImage from "@/components/hero-image";
 import { SectionComponent } from "@/components/section";
 import Link from "next/link";
 import { CSSProperties } from "react";
-import { AiFillGithub, AiOutlineMail, AiOutlineWhatsApp } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
+import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 import AboutMe from "../data/about.data.json";
 import ProjectsData from "../data/projects.data.json";
 import ExperienceData from "./../data/experience.data.json";
+import { IconBase } from "react-icons";
 
 export default function Home() {
+
+    const socialLinks = [
+        {
+            name: "LinkedIn",
+            url: "https://www.linkedin.com/in/edwin-cosme/",
+            Icon: FaLinkedin,
+        },
+        {
+            name: "GitHub",
+            url: "https://github.com/adriancosme",
+            Icon: AiFillGithub,
+        },
+        {
+            name: "WhatsApp",
+            url: "https://wa.me/+529841536959",
+            Icon: FaWhatsapp,
+        },
+        {
+            name: "Email",
+            url: "mailto:adriancosme15@gmail.com",
+            Icon: MdEmail,
+        },
+    ];
+
     return (
         <>
             <header id="home" className="relative mx-10vw">
@@ -139,39 +165,23 @@ export default function Home() {
                                 "--hero-text-reveal-y-step-3": "0px",
                             } as CSSProperties}
                         >
-                            <section about="Social links" className="flex gap-4">
-                                <Link
-                                    href="https://github.com/adriancosme"
-                                    about="Github profile page"
-                                    target="_blank"
-                                    className="group flex items-center justify-center w-11 h-11 bg-white hover:bg-[#1C68B0] rounded-full -left-3 cursor-pointer"
-                                >
-                                    <AiFillGithub className="text-black group-hover:text-white group-hover:scale-110" size={32} />
-                                </Link>
-                                <Link
-                                    href="https://www.linkedin.com/in/edwin-cosme/"
-                                    about="Linkedin profile page"
-                                    target="_blank"
-                                    className="group flex items-center justify-center w-11 h-11 bg-white hover:bg-[#1C68B0] rounded-full -left-3 cursor-pointer"
-                                >
-                                    <FaLinkedinIn className="text-black group-hover:text-white" size={32} />
-                                </Link>
-                                <Link
-                                    href="https://wa.me/+529841536959"
-                                    about="WhatsApp number"
-                                    target="_blank"
-                                    className="group flex items-center justify-center w-11 h-11 bg-white hover:bg-[#1C68B0] rounded-full -left-3 cursor-pointer"
-                                >
-                                    <AiOutlineWhatsApp className="text-black group-hover:text-white" size={32} />
-                                </Link>
-                                <Link
-                                    href="mailto:adriancosme15@gmail.com"
-                                    about="Email address"
-                                    target="_blank"
-                                    className="group flex items-center justify-center w-11 h-11 bg-white hover:bg-[#1C68B0] rounded-full -left-3 cursor-pointer"
-                                >
-                                    <AiOutlineMail className="text-black group-hover:text-white" size={32} />
-                                </Link>
+                            <section about="Social links" className="flex items-center space-x-1">
+                                {
+                                    socialLinks?.map(({ name, url, Icon }, index) => {
+                                        return (
+                                            <Link
+                                                href={url}
+                                                title={name}
+                                                key={index}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center space-x-3 justify-center whitespace-nowrap rounded-md text-sm font-medium focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 dark:focus-visible:ring-neutral-700 focus-visible:ring-neutral-500 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 h-9 w-9 dark:hover:text-neutral-50 opacity-80 transition-opacity duration-150 hover:opacity-100"
+                                            >
+                                                <Icon className="text-neutral-900 dark:text-neutral-50" size={24} />
+                                            </Link>
+                                        )
+                                    })
+                                }
                             </section>
                         </div>
                         <div
@@ -200,7 +210,7 @@ export default function Home() {
             </header>
             <main className="relative mx-10vw text-primary">
                 <SectionComponent id="projects" title="Projects">
-                    <div className="grid grid-cols-12 gap-5 mt-8">
+                    <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
                         {ProjectsData.map((project, index) => (
                             <Card
                                 key={index}
@@ -208,7 +218,7 @@ export default function Home() {
                                 title={project.title}
                                 image={project.image}
                                 altImage={project.title}
-                                bodyText={project.description}
+                                description={project.description}
                                 hasLiveDemo={project.hasLiveDemo}
                                 liveDemoUrl={project.demoUrl}
                                 hasRepository={project.hasRepository}
@@ -219,7 +229,7 @@ export default function Home() {
                     </div>
                 </SectionComponent>
                 <SectionComponent id="about-me" title="About me">
-                    <p className="mt-8 text-white">{AboutMe.text}</p>
+                    <p className=" text-white">{AboutMe.text}</p>
                 </SectionComponent>
                 <SectionComponent id="experience" title="Experience">
                     <Experience data={ExperienceData} />
