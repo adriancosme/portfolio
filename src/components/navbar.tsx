@@ -1,11 +1,10 @@
 "use client";
-import '../styles/navbar.css';
 import { MOBILE_MENU_CONTENT_ID } from "@/constants/mobile-menu";
 import useMenuToggle from "@/hooks/useMenuToggle";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import '../styles/navbar.css';
 import HamburgerButton from "./hamburger-button";
-import { useEffect, useState } from "react";
 
 
 type NavbarPropsType = {
@@ -18,10 +17,7 @@ type NavbarPropsType = {
 export const NavbarComponent = ({ pages }: NavbarPropsType): JSX.Element => {
   const { isOpen, toggle } = useMenuToggle();
   // const pathname = usePathname();  
-  useEffect(() => {
-    document.body.classList.toggle("overflow-hidden");
-    document.body.classList.toggle("lg:overflow-auto");
-  }, [isOpen]);
+
   return (
     <div className={`px-5vw py-9 lg:py-12`}>
       <nav className={`mx-auto text-primary flex max-w-8xl items-center justify-between ${isOpen ? "open" : ""}`}>
