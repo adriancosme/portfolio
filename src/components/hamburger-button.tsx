@@ -25,10 +25,9 @@ export default function HamburgerButton({ className = "", id, isOpen, toggle }: 
             aria-label={isOpen ? "Close menu" : "Open menu"}
         >
             <span className="sr-only">Open main menu</span>
-            <span className={`group-[.open]:translate-y-2 group-[.open]:rotate-45 ${genericHambugerLineClass}`}></span>
+            <span className={`group-[.open]:translate-y-[1.14rem] group-[.open]:rotate-45 ${genericHambugerLineClass}`}></span>
             <span className={`group-[.open]:opacity-0 ${genericHambugerLineClass}`}></span>
-            <span className={`group-[.open]:opacity-0 ${genericHambugerLineClass}`}></span>
-            <span className={`group-[.open]:-translate-y-[0.6rem] group-[.open]:-rotate-45" ${genericHambugerLineClass}`}></span>
+            <span className={`group-[.open]:translate-y-0 group-[.open]:-rotate-45 ${genericHambugerLineClass}`}></span>
         </button>
     );
 }
