@@ -25,12 +25,7 @@ export default function Home() {
             name: "GitHub",
             url: "https://github.com/adriancosme",
             Icon: AiFillGithub,
-        },
-        {
-            name: "WhatsApp",
-            url: "https://wa.me/+529841536959",
-            Icon: FaWhatsapp,
-        },
+        },        
         {
             name: "Email",
             url: "mailto:adriancosme15@gmail.com",
